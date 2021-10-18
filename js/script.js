@@ -7,7 +7,7 @@ function padString (str, strPower, symb, isRightSymb = true) {
     }
     
     if (symb) {
-        for (symb.length = 1; (str + symb).length < strPower; symb.length++) {
+        while ((str + symb).length < strPower) {
             symb += symb.substr(-1, strPower);
         }
     } else {
