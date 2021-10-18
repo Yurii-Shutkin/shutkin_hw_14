@@ -10,10 +10,8 @@ function padString (str, strPower, symb, isRightSymb = true) {
         while ((str + symb).length < strPower) {
             symb += symb.substr(-1, strPower);
         }
-    } else {
-        if (str.length < strPower) {
-            return (str.substr(0, str.length));
-        }
+    } else if (str.length < strPower) {
+            return (str.substr(0, str.length)); 
     }
     
     if ((str + symb).length > strPower) {
