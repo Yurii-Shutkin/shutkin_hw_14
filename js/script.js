@@ -11,7 +11,7 @@ function padString (str, strPower, symb, isRightSymb = true) {
             symb += symb.substr(-1, strPower);
         }
     } else if (str.length < strPower) {
-            return (str.substr(0, str.length)); 
+        return (str.substr(0, str.length)); 
     }
     
     if ((str + symb).length > strPower) {
